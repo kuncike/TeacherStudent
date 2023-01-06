@@ -1,0 +1,44 @@
+
+<view class="pj" wx:if="{{hasUserInfo}}">
+  <picker mode="selector" value="{{index}}"  range="{{identity}}" range-key="name" bindchange="identity">
+     请选择身份:  {{identityname}}
+  </picker>
+</view>
+
+<view class="userinfo-nickname" wx:if="{{hasUserInfo}}">
+  <view class="weight">
+    <image class="userinfo-avatar " src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view class="nickname" >{{userInfo.nickName}}</view>
+</view>
+<view class="nones" wx:else>未登录</view>
+<view class="padd" wx:if="{{!hasUserInfo}}">
+  <button class="button" bindtap="getUserProfile">获取登录信息</button>
+</view>
+
+<view wx:if="{{identitytag=='teacher'}}">
+  <view class="jiange">
+    <view bindtap="Semaphore" class="item"> 我的工作量记录</view>
+  </view>
+  <view class="jiange">
+    <view bindtap="tm" class="item">填写老师信息</view>
+  </view>
+  <view class="jiange">
+    <view bindtap="Publish" class="item"> 我发布的记录</view>
+  </view>
+  <view class="jiange">
+    <view class="item" bindtap="mystudents">我挑选的学生</view>
+  </view>
+</view>
+<view wx:elif="{{identitytag=='students'}}">
+  <view class="jiange">
+    <view class="item" bindtap="StudentInfo">填写学生信息</view>
+  </view>
+  <view class="jiange">
+    <view class="item" bindtap="mySelect">我挑选的老师及课题</view>
+  </view>
+  <view class="jiange">
+    <view class="item" bindtap="beSelect">选择我的老师</view>
+  </view>
+</view>
+<view class="nones" wx:else>未选择身份</view>

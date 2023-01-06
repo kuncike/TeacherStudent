@@ -1,0 +1,48 @@
+/* miniprogram/pages/logins/logins.wxss */
+.button{
+  height: 90rpx !important;
+  width: 100%  !important;
+  color: white !important;
+  font-size: 40rpx !important;
+  background-color: #BEBEBE !important ;
+}
+.padd{
+display: flex;
+position: relative;
+padding-top:80%;
+}
+.item
+{
+display: flex;
+flex-direction: row;
+font-size: 13pt;
+align-items: center;
+width: 100%;
+padding-left: 30rpx;
+height: 100rpx;
+background-color: #fff;
+}
+.jiange{
+display: flex;
+height: 120rpx;
+align-items: center;
+color: #1E90FF;
+}
+.weight{
+width: 50%;
+}
+
+picker{
+display: flex;
+align-items: center;
+padding-left: 30rpx;
+font-size: 14pt;
+color: #1E90FF;
+height: 100rpx;
+background-color: #fff;
+border-radius: 5%;
+width: 100%;
+}
+.pj{
+height: 110rpx;
+}

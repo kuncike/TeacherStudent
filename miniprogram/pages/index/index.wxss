@@ -1,0 +1,25 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.total{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.part{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.partnew{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  color: #1E90FF;
+  background-color: #b8dcff;
+}

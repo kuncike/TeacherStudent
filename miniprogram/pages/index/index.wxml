@@ -1,0 +1,39 @@
+<view>status：{{tag}}</view>
+<!-- 老师页面 -->
+<view wx:if="{{tag=='teacher'}}">
+<view wx:for="{{Smessage}}">
+姓名：{{Smessage[index].message.name}}
+专业：{{Smessage[index].message.Profession}}
+经历：{{Smessage[index].message.experiance}}
+</view>
+</view>
+<!-- 学生页面 -->
+<view wx:elif="{{tag=='students'}}">
+
+  <view class="total">
+
+    <view class="{{name=='text'?'partnew':'part'}}" bindtap="part" data-name="text">
+
+    当前拥有的论文选题
+    </view>
+    <view class="{{name=='teacher'?'partnew':'part'}}" bindtap="part" data-name="teacher">
+    所有老师信息
+    </view>
+  </view>
+
+  <view wx:if="{{name=='text'}}">
+      论文选题
+    </view>
+    <view wx:elif="{{name=='teacher'}}">
+      <view wx:for="{{Tmessage}}">
+        姓名：{{Tmessage[index].message.name}}
+        专业：{{Tmessage[index].message.Profession}}
+        经历：{{Tmessage[index].message.experiance}}
+      </view>
+      老师信息
+    </view>
+
+
+
+</view>
+<view class="nones" wx:else>未选择身份</view>

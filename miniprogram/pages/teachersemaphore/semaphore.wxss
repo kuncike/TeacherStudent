@@ -1,0 +1,135 @@
+/* miniprogram/pages/teachersemaphore/semaphore.wxss */view{
+  color: #4682B4;
+}
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.xuanze{
+  color: #697b90;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.padd{
+  padding-left:15rpx ;
+}
+.PartP{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content: space-between;
+}
+.Part{
+  width: 92%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content: space-between;
+  border-bottom: 2rpx solid #8888; 
+}
+.total{
+  font-size: 45rpx;
+  border: 2rpx;
+  padding: 30rpx;
+}
+.part1{
+  font-size: 18pt;
+  border: 2rpx;
+  padding: 10rpx;
+  color: #1E90FF;
+}
+.part2{
+  font-size: 15pt;
+  padding: 0rpx 30rpx 0rpx 0rpx;
+  color: #00BFFF;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.body{
+  width: 96%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2rpx 2rpx 2rpx 2rpx #8888;
+}
+.center{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.toppicker{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 13pt;
+  color: #4682B4;
+}
+picker{
+  width: 50%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 12pt;
+  color: #4682B4;
+}
+input{
+  width: 45%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.border{
+  padding-top: 10rpx;
+}
+
+
+.PT{
+  font-size: 14pt;
+  font-weight: bolder;
+  color: black;
+  width: 100%;
+}
+
+
+.buttontype{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.none{
+  font-size: 15pt;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #DCDCDC;
+}
+.total{
+  font-size: 15pt;
+  font-weight: 500;
+  color: #4169E1;
+  padding:40rpx;
+}
